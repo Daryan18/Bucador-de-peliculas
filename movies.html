@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de películas</title>
+    <script  src="movies.js"></script>
+    <link rel="stylesheet" href="./movies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>Cool<span>Movies</span></p>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Buscar película:</h3>
+                <input type="text" class="form-control" placeholder="Título de la película..."id="movie-search-box"onkeyup="findMovies()"onclick="findMovies()">
+                <div class="search-list" id="search-list">
+                    <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="https://pics.filmaffinity.com/El_diario_de_Bridget_Jones-320975640-large.jpg">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>El Diario de Bridget Jones</h3>
+                            <p>2001</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <div class="movie-poster">
+                        <img src="https://pics.filmaffinity.com/El_diario_de_Bridget_Jones-320975640-large.jpg" alt="movie-poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">El Diario de Bridget Jones</h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Año: 2001 </li>
+                            <li class="released">Fecha de estreno: 13 abril</li>
+                        </ul>
+                        <p class="genre"><b>Género:</b>Comedia Romántica</p>
+                        <p class="writer"><b>Directora:</b> Sharon Maguire</p>
+                        <p class="actors"><b>Actores:</b> Hugh Grant, Renée Zellweger, Colin Firth</p>
+                        <p class="plot"><b>Resumen:</b> Las crónicas diarias de una joven divertida, pero acomplejada, cuya vida sentimental está siempre en crisis; y que vive obsesionada con la idea de bajar de peso, dejar de fumar y conseguir novio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
